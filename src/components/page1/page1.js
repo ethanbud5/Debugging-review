@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import { link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class page1 extends Component {
   render() {
-    return {
-      <div>
+    return <div>
         <h1>Page 1</h1>
         <p>
           <p>You should be able to link back to home, right?</p>
         </p>
-         <link to='/'>Home</link>
+         <Link to='/'>Home</Link>
       </div>
     };
   }
-}
 
-export default Page1;
+
+export default page1;

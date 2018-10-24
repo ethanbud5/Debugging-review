@@ -13,7 +13,7 @@ class page3 extends Component {
 
     componentDidMount(){
         axios.get('https://www.breakingbadapi.com/api/characters/').then(response=> {
-            this.setState({characters: reponse.data})            
+            this.setState({characters: response.data})            
         })
     }
 

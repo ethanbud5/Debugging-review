@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
-import {Switch} from 'react-router-dom'
+import "./../../App.css"
 
 import { updateInput } from '../../ducks/reducer';
 
-class page2 extends component {
+class page2 extends Component {
   constructor() {
     super();
     this.state = {
@@ -14,7 +14,7 @@ class page2 extends component {
   }
 
 submitName = () => { 
-    this.setState({names: [...this.state.names, props.name]})}
+    this.setState({names: [...this.state.names, this.props.name]})
 }
 
   render() {
@@ -34,7 +34,7 @@ submitName = () => {
         />
         <button onClick={() => this.submitName()}>Submit</button>
         {nameMap}
-        <div className={bottom_links}>
+        <div className="bottom_links">
             <Link to="/">
             <p>Home</p>
             </Link>
